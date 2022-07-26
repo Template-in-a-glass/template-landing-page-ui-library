@@ -1,8 +1,8 @@
 {
-  "name": "ui-landing-page-ui-library",
+  "name": "template-landing-page-ui-library",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "build": "tsc && vite build",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
@@ -24,7 +24,7 @@
     "@storybook/addon-essentials": "^6.5.9",
     "@storybook/addon-interactions": "^6.5.9",
     "@storybook/addon-links": "^6.5.9",
-    "@storybook/addon-postcss": "^3.0.0-alpha.1",
+    "@storybook/addon-postcss": "^2.0.0",
     "@storybook/builder-vite": "^0.2.1",
     "@storybook/react": "^6.5.9",
     "@storybook/testing-library": "^0.0.13",

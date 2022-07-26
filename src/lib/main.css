@@ -1,3 +1,25 @@
 @tailwind base;
+
 @tailwind components;
+
 @tailwind utilities;
+
+html {
+  @apply h-full bg-gray-50;
+}
+
+body {
+  @apply h-full;
+}
+
+input {
+  @apply focus:border-primary-500 !important;
+  @apply focus:ring-0 !important;
+  @apply focus:border !important;
+}
+
+select {
+  @apply focus:border-primary-500 !important;
+  @apply focus:ring-0 !important;
+  @apply focus:border !important;
+}
