@@ -14,9 +14,9 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'src', 'lib', 'index.ts'),
-      name: 'lola-landing-page-ui-library',
+      name: 'template-landing-page-ui-library',
       formats: ['es', 'umd'],
-      fileName: (ext) => `lola-landing-page-ui-library.${ext}.js`
+      fileName: (ext) => `template-landing-page-ui-library.${ext}.js`
     },
     rollupOptions: {
       external: ['react', 'react-dom', 'react-hook-form', '@heroicons/react', '@headlessui/react'],
