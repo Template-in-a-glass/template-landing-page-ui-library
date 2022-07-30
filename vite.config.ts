@@ -13,19 +13,21 @@ export default defineConfig({
   ],
   build: {
     lib: {
-      entry: resolve(__dirname, 'src/lib/index.ts'),
-      name: 'template-landing-page-ui-library',
+      entry: resolve(__dirname, 'src', 'lib', 'index.ts'),
+      name: 'lola-landing-page-ui-library',
       formats: ['es', 'umd'],
-      fileName: (format) => `template-landing-page-ui-library.${format}.js`
+      fileName: (ext) => `lola-landing-page-ui-library.${ext}.js`
     },
     rollupOptions: {
-      external: ['react', 'react-dom'],
+      external: ['react', 'react-dom', 'react-hook-form', '@heroicons/react', '@headlessui/react'],
       output: {
         globals: {
           react: 'React',
-          'react-dom': 'ReactDOM'
+          'react-dom': 'ReactDOM',
+          '@headlessui/react': '@headlessui/react'
         }
       }
-    }
+    },
+    target: 'esnext'
   }
 });
